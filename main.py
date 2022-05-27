@@ -455,7 +455,7 @@ def main():
             st.success('Created Successfully')
             alignment_1 = open('.\\alignment.csv', 'r')
             file = alignment_1.read()
-            with st.expander:
+            with st.expander("See result contents"):
                 st.write(file)
             st.download_button("Download File", file, file_name="alignment_1.csv")
 
