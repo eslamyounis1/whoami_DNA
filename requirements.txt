@@ -1,3 +1,6 @@
 neatbio==0.0.2
 matplotlib==3.5.2
 biopython==1.79
+bs4==0.0.1
+beautifulsoup4==4.11.1
+lxml==4.8.0
