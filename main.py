@@ -311,7 +311,7 @@ def main():
                 st.json({"GC Content": gc_score, "AT Content": at_score})
 
                 # Nucleotide count search
-                nt_count = st.text_input("Enter Nucleotide Here: ", "Type Nucleotide Alphabet")
+                nt_count = st.text_input("Enter Nucleotide Here: ", "Type Nucleotide Alphabet").upper()
                 st.write(("Number of {} Nucleotide is ::{}".format(nt_count, str(dna_seq).count(nt_count))))
 
                 # Protein Synthesis - Transcription - Translation
