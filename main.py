@@ -451,7 +451,7 @@ def main():
             wr.writerows(export)
 
             st.success('Created Successfully')
-            st.download_button("Download File", str(alignment), file_name="alignment.csv")
+            st.download_button("Download File", str(alignment), file_name="alignment-address.csv")
 
 
         if st.button("Visualize Similarity"):
