@@ -432,16 +432,19 @@ def main():
             src = results.content
             soup = BeautifulSoup(src, 'lxml')
 
-            for i in range(2):
-                Alignment_results = soup.find_all('tr', {'id': 'alignment_' + str(i)})
-                Alignment = Alignment_results[0].text.split('\n')
+            for i in range(1000):
+                try:
+                    Alignment_results = soup.find_all('tr', {'id': 'alignment_' + str(i)})
+                    Alignment = Alignment_results[0].text.split('\n')
 
-                ID.append(Alignment[6])
-                length.append(Alignment[12])
-                score.append(Alignment[13])
-                identity.append(Alignment[14])
-                positives.append(Alignment[15])
-                E.append(Alignment[16])
+                    ID.append(Alignment[6])
+                    length.append(Alignment[12])
+                    score.append(Alignment[13])
+                    identity.append(Alignment[14])
+                    positives.append(Alignment[15])
+                    E.append(Alignment[16])
+                except:
+                    pass
 
             file_lists = [ID, length, score, identity, positives]
             export = zip_longest(*file_lists)
