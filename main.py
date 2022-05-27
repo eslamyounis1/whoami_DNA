@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 from itertools import zip_longest
+
 matplotlib.use("Agg")
 
 
@@ -449,10 +450,14 @@ def main():
             wr = csv.writer(alignment)
             wr.writerow(['ID', 'length', 'score', 'identity', 'positives', 'E'])
             wr.writerows(export)
+            st.write(alignment.read())
 
             st.success('Created Successfully')
-            st.download_button("Download File", str(alignment), file_name="alignment-address.csv")
-
+            alignment_1 = open('.\\alignment.csv', 'r')
+            file = alignment_1.read()
+            with st.expander:
+                st.write(file)
+            st.download_button("Download File", file, file_name="alignment_1.csv")
 
         if st.button("Visualize Similarity"):
             with open('.\\alignment.csv', 'r') as alignment:
@@ -507,4 +512,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
