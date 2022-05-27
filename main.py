@@ -456,7 +456,7 @@ def main():
             alignment_1 = open('.\\alignment.csv', 'r')
             file = alignment_1.read()
             with st.expander("See result contents"):
-                st.write(file)
+                st.text(file)
             st.download_button("Download File", file, file_name="alignment_1.csv")
 
         if st.button("Visualize Similarity"):
