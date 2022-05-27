@@ -1,1 +1,2 @@
 neatbio==0.0.2
+matplotlib==3.5.2
