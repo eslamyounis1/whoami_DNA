@@ -506,11 +506,13 @@ def main():
         st.text('''
                         Team Members:
                                1- Eslam Younis
-                               2- Maria Sameh
-                               3- Ester elzek
-                               4- Mira Rafat
-                               5- Merihan Yousef
-                               6- Steven Waheed''')
+                               2- Steven Waheed
+                               3- Maria Sameh 
+                               4- Ester elzek
+                               5- Mira Rafat
+                               6- Silvia Ashraf
+                               7- Sandy Esam''')
+
 
 
 if __name__ == '__main__':
