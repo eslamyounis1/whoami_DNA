@@ -4,4 +4,4 @@ biopython==1.79
 bs4==0.0.1
 beautifulsoup4==4.11.1
 lxml==4.8.0
-biotite==0.35.0
+
