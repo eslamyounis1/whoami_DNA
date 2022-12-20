@@ -41,8 +41,6 @@ labelImg==1.8.6
 libclang==14.0.6
 libs==0.0.10
 lxml==4.9.1
-Markdown==3.4.1
-MarkupSafe==2.1.1
 matlabruntimeforpython===R2016a
 matplotlib==3.6.0
 missingno==0.5.1
@@ -55,7 +53,6 @@ pandas==1.4.4
 pexpect==4.8.0
 Pillow==9.2.0
 ply==3.11
-protobuf==3.19.4
 ptyprocess==0.7.0
 pyarrow==9.0.0
 pyasn1==0.4.8
